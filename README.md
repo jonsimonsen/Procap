@@ -30,5 +30,5 @@ versions
 0.1
 ---
 
--Preliminary local installation of Highcharts (ignored in repo).
--Setup of GitHub repo with README and initial gitignore.
+-Preliminary local installation of Highcharts (ignored in repo). <br>
+-Setup of GitHub repo with README and initial gitignore. <br>
