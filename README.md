@@ -18,3 +18,6 @@ Tuesday
 -------
 
 -Overview of html examples from highcharts. D <br>
+-Created GitHub repo. F <br>
+-ISSUE: Choosing appropriate gitignore. Chose Node, since it seems like the node.js framework is involved. Is there a better base for the gitignore? <br>
+-TODO: Make a local fork of the repo. Presumably B. <br>
