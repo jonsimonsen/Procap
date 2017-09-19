@@ -22,7 +22,9 @@ Tuesday
 -ISSUE: Choosing appropriate gitignore. Chose Node, since it seems like the node.js framework is involved. Is there a better base for the gitignore? C <br>
 -Setting up a local clone of the repo.  D <br>
 -Commiting version 0.1. <br>
--TODO: The plan is to either look more closely at Highcharts documentation and examples or to start working on a html document as the base for the visualization. 0 <br>
+-Made a basic html document for testing. B <br>
+-Highcharts get started setup in progress. H <br>
+-TODO: More on the get started part of highcharts. 0 <br>
 
 versions
 --------
@@ -32,3 +34,8 @@ versions
 
 -Preliminary local installation of Highcharts (ignored in repo). <br>
 -Setup of GitHub repo with README and initial gitignore. <br>
+
+0.2
+---
+
+-Made a basic html document, and populated it with data from Highcharts get started section. <br>
