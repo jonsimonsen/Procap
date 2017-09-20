@@ -24,7 +24,13 @@ Tuesday
 -Commiting version 0.1. <br>
 -Made a basic html document for testing. B <br>
 -Highcharts get started setup in progress. H <br>
--TODO: More on the get started part of highcharts. 0 <br>
+-Commiting version 0.2. <br>
+
+Wednesday
+---------
+
+Looked at a tutorial on JavaScript. D
+Got "more started" on highcharts. E
 
 versions
 --------
