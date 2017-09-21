@@ -37,7 +37,9 @@ Thursday
 
 -Fixed an error in path to local highcharts dir. Might need to change it again if uploading to the web. H  
 -Refactored the README to try to use double spaces instead of br tags. B  
--Making a temporary non-working commit before doing code refactoring...
+-Refactoring scripted functions into js-files in a new dir. E  
+-Getting the scripts correctly into the html file. Resulted in renaming of the html file and discovery of a bug. G  
+-Commiting version 0.3  
 
 versions
 --------
@@ -52,3 +54,9 @@ versions
 ---
 
 -Made a basic html document, and populated it with data from Highcharts get started section.  
+
+0.3
+---
+
+-More orderly and easier customizable code.  
+-Possible TODO: Let the user decide the content on the page.  
