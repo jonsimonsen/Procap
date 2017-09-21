@@ -36,7 +36,8 @@ Thursday
 --------
 
 -Fixed an error in path to local highcharts dir. Might need to change it again if uploading to the web. H  
--Refactored the README to try to use double spaces instead of br tags.  
+-Refactored the README to try to use double spaces instead of br tags. B  
+-Making a temporary non-working commit before doing code refactoring...
 
 versions
 --------

@@ -6,85 +6,10 @@
 <script src="Highcharts/code/highcharts.js"></script>
 <script type="text/javascript" src="http://code.highcharts.com/js/themes/avocado.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- <script>
-$(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'bar'
-        },
-        title: {
-            text: 'Fruit Consumption'
-        },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
-            }
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
-    });
-});
-</script> -->
-<script>
-$(function() {
-    Highcharts.setOptions({
-        chart: {
-            backgroundColor: {
-                linearGradient: [0, 0, 500, 500],
-                stops: [
-                    [0, 'rgb(255, 255, 255)'],
-                    [1, 'rgb(240, 240, 255)']
-                    ]
-            },
-            borderWidth: 2,
-            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
-            plotShadow: true,
-            plotBorderWidth: 1
-        }
-    });
 
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'container',
-        },
-
-        xAxis: {
-            type: 'datetime'
-        },
-
-        series: [{
-            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-            pointStart: Date.UTC(2010, 0, 1),
-            pointInterval: 3600 * 1000 // one hour
-        }]
-    });
-
-    var chart2 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'container2',
-            type: 'column'
-        },
-
-        xAxis: {
-            type: 'datetime'
-        },
-
-        series: [{
-            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-            pointStart: Date.UTC(2010, 0, 1),
-            pointInterval: 3600 * 1000 // one hour
-        }]
-    });
-});
-</script>
+<!-- For now, change the path in the following tag to change the contents of the page.
+Also, pay attention to divs that might be empty or missing. -->
+<script> src="JS/gstart02.js"</script>
 </head>
 <body style="background-color:#F3E2A9;">
 
