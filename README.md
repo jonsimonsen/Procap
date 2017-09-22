@@ -4,6 +4,11 @@ Project for visualization of statistical data
 The project is not constructed with the public in mind, so the README is not necessarily particularly descriptive.  
 It might not make perfect sense for casual readers.  
 
+After forking, the results can be seen by opening the html file in a browser.  
+Before doing that, either download the archive from the highchart's web site  
+or uncomment the script-tag for their site in the html file and comment out the other script-tag for highcharts.  
+The project has only been tested on Firefox.  
+
 Monday
 ------
 
