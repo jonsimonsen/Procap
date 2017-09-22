@@ -17,7 +17,7 @@ $(function() {
 
     var chart1 = new Highcharts.Chart({
         chart: {
-            renderTo: 'container',
+            renderTo: 'container1',
         },
 
         xAxis: {
@@ -48,3 +48,5 @@ $(function() {
         }]
     });
 });
+
+document.getElementById('count').innerHTML = '2'; //Number of graphs

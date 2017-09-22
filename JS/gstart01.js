@@ -1,5 +1,5 @@
-$(function () {
-    var myChart = Highcharts.chart('container', {
+$(function fruits() {
+    var myChart = Highcharts.chart('container1', {
         chart: {
             type: 'bar'
         },
@@ -23,3 +23,5 @@ $(function () {
         }]
     });
 });
+
+document.getElementById('count').innerHTML = '1'; //Number of graphs
