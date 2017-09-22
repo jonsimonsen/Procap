@@ -41,6 +41,11 @@ Thursday
 -Getting the scripts correctly into the html file. Resulted in renaming of the html file and discovery of a bug. G  
 -Commiting version 0.3  
 
+Friday
+------
+-Made function to create divs inside a div for displaying charts. Included learning basic debugging of JS. H  
+-Commiting version 0.4
+
 versions
 --------
 
@@ -60,3 +65,9 @@ versions
 
 -More orderly and easier customizable code.  
 -Possible TODO: Let the user decide the content on the page.  
+
+0.4
+---
+
+-Made a function for placing divs inside a div. Can now change the charts by specifying another JS file without changing the html code.  
+-Same TODO as 0.3. Should look into using buttons.  
