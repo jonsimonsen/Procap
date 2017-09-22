@@ -4,7 +4,7 @@
 
 $(function selectChart(){
   // possible charts to display
-  var charts = ['gstart01.js', 'gstart02.js'];
+  var charts = ['gstart01.js', 'gstart02.js', 'hr_ssb.js'];
   var postChart = 'divmaker.js' // run after chart js to display the charts properly
   var num = document.getElementById('tot');
 
@@ -40,7 +40,7 @@ $(function selectChart(){
 
 function selectChart(){
   // possible charts to display
-  var charts = ['gstart01.js', 'gstart02.js'];
+  var charts = ['gstart01.js', 'gstart02.js', 'hr_ssb.js'];
   var postChart = 'divmaker.js' // run after chart js to display the charts properly
   var num = document.getElementById('tot');
 

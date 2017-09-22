@@ -51,7 +51,10 @@ Friday
 -Made button for cycling through graphs. B  
 -Fixed the button so it actually does cycle through graphs. H  
 -Removed debugging (console logging) code. B  
--Commiting version 0.5
+-Commiting version 0.5  
+-Added another chart based on json-stat (Hurtigruten). H  
+-The chart is static and all data included in the js file.  
+-Commiting version 0.6
 
 versions
 --------
@@ -95,3 +98,11 @@ versions
 -Refactored the divmaker to get rid of existing children before adding new ones.  
 -TODO: Attempt to make the selector DRY (has identical js and jquery function). Not a high priority.  
 -TODO2: Look into using JSON data to create charts.  
+
+0.6
+---
+
+-Contains a chart of actual data from SSB/Hurtigruten along with the other charts.  
+-TODO: Make it possible to read the data from file and/or directly from the web api.  
+TODO2: Fix a bug that makes the new chart be only half of the desired height.  
+TODO3: Apply DRY to the selector.  
