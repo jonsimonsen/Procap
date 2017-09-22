@@ -5,14 +5,15 @@
 // By Jon Simonsen
 
 var count = document.getElementById('count').innerHTML;   // Determines number of containers
-console.log(count)
 var h = parseInt(document.getElementById('display').style.height, 10) / count;  //height of each container
-console.log(h)
 var divid = 'container';  // Base for div ids
-console.log(divid)
 var disp = document.getElementById("display");
-console.log(disp)
 var container;
+
+// Remove previous containers, https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
+while(disp.firstChild){
+  disp.removeChild(disp.firstChild);
+}
 
 // Create containers and add them to the display
 for(i=1;i<=count;i++){
@@ -20,6 +21,5 @@ for(i=1;i<=count;i++){
   container.id = divid + i;
   container.style.width = "100%";
   container.style.height = h + 'px';
-  console.log(container)
   disp.appendChild(container);
 }

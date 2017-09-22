@@ -1,6 +1,6 @@
 // Highcharts example 1
 
-$(function fruits() {
+$(function () {
     var myChart = Highcharts.chart('container1', {
         chart: {
             type: 'bar'

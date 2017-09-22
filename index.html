@@ -7,20 +7,19 @@
 <script src="Highcharts/code/highcharts.js"></script>
 <script type="text/javascript" src="http://code.highcharts.com/js/themes/avocado.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script src="JS/selector.js"></script>
 </head>
 <body style="background-color:#F3E2A9;">
 
 <h2 style="text-align:center">Highcharts test page</h2>
 
-<p>Page <b id="curr">0</b> of <b id="tot">0</b>. Shows <b id="count">0</b> charts.</p>
+<p>Page <b id="curr">0</b> of <b id="tot">0</b>. Shows <b id="count">0</b> charts. <button onclick="selectChart();">Next page</button></p>
 <div id="scripts">
   <script id="charts"></script>
 </div>
-<script src="JS/selector.js"></script>
+<!-- <script src="JS/selector.js"></script> -->
 
 <div id="display" style="width:100%; height:900px;"></div>
-<!-- <script src="JS/divmaker.js"></script> -->
 
 </body>
 </html>

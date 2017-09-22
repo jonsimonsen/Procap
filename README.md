@@ -44,10 +44,14 @@ Thursday
 Friday
 ------
 -Made script to create divs inside a div for displaying charts. Included learning basic debugging of JS. H  
--Commiting version 0.4
+-Commiting version 0.4  
 -Made script to enable cycling through charts. H  
 -Added more comments to the code. C  
--Commiting version 0.45
+-Commiting version 0.45  
+-Made button for cycling through graphs. B  
+-Fixed the button so it actually does cycle through graphs. H  
+-Removed debugging (console logging) code. B  
+-Commiting version 0.5
 
 versions
 --------
@@ -82,3 +86,12 @@ versions
 -Better commented code.  
 -TODO is still the same. The button will probably try to reload or render the page again with different initial state.  
 -TODO2: Remove/comment out debugging code where appropriate.  
+
+0.5
+---
+
+-Has a button that cycles through charts.  
+-Removed console logging from debugging.  
+-Refactored the divmaker to get rid of existing children before adding new ones.  
+-TODO: Attempt to make the selector DRY (has identical js and jquery function). Not a high priority.  
+-TODO2: Look into using JSON data to create charts.  
