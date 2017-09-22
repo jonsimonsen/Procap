@@ -8,21 +8,20 @@
 <script type="text/javascript" src="http://code.highcharts.com/js/themes/avocado.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- For now, change the path in the following tag to change the contents of the page.
-Also, pay attention to divs that might be empty or missing. -->
 </head>
 <body style="background-color:#F3E2A9;">
 
 <h2 style="text-align:center">Highcharts test page</h2>
 
-<p>Shows <b id="count">0</b> graphs.</p>
-<script src="JS/gstart02.js"></script>
+<p>Page <b id="curr">0</b> of <b id="tot">0</b>. Shows <b id="count">0</b> charts.</p>
+<div id="scripts">
+  <script id="charts"></script>
+</div>
+<script id="charts"></script>
+<script src="JS/selector.js"></script>
 
 <div id="display" style="width:100%; height:900px;"></div>
 <script src="JS/divmaker.js"></script>
-<!-- <div id="container" style="width:100%; height:400px;"></div>
-<div id="container2" style="width:100%; height:400px;"></div> -->
-
 
 </body>
 </html>
