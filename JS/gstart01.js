@@ -1,3 +1,5 @@
+// Highcharts example 1
+
 $(function fruits() {
     var myChart = Highcharts.chart('container1', {
         chart: {
@@ -24,4 +26,5 @@ $(function fruits() {
     });
 });
 
+// Addition by Jon Simonsen
 document.getElementById('count').innerHTML = '1'; //Number of graphs

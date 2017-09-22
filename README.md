@@ -43,8 +43,11 @@ Thursday
 
 Friday
 ------
--Made function to create divs inside a div for displaying charts. Included learning basic debugging of JS. H  
+-Made script to create divs inside a div for displaying charts. Included learning basic debugging of JS. H  
 -Commiting version 0.4
+-Made script to enable cycling through charts. H  
+-Added more comments to the code. C  
+-Commiting version 0.45
 
 versions
 --------
@@ -69,5 +72,13 @@ versions
 0.4
 ---
 
--Made a function for placing divs inside a div. Can now change the charts by specifying another JS file without changing the html code.  
+-Made a script for placing divs inside a div. Can now change the charts by specifying another JS file without changing the html code.  
 -Same TODO as 0.3. Should look into using buttons.  
+
+0.45
+----
+
+-Made a script for cycling through charts. Will hopefully enable cycling after including a button.  
+-Better commented code.  
+-TODO is still the same. The button will probably try to reload or render the page again with different initial state.  
+-TODO2: Remove/comment out debugging code where appropriate.  

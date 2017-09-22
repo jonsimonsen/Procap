@@ -1,3 +1,5 @@
+// Highcharts example 2
+
 $(function() {
     Highcharts.setOptions({
         chart: {
@@ -49,4 +51,5 @@ $(function() {
     });
 });
 
+//Addition by Jon Simonsen
 document.getElementById('count').innerHTML = '2'; //Number of graphs
