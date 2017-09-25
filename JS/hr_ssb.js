@@ -5,111 +5,125 @@
 // By Jon Simonsen
 
 $(function () {
-    var jstat = {
-      "dataset": {
-        "dimension": {
-          "Havner": {
-            "label": "havn",
-            "category": {
-              "index": {
-                "TOS": 0
-              },
-              "label": {
-                "TOS": "Tromsø"
-              }
+    var rawFile = new XMLHttpRequest(); // https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file
+    rawFile.open("GET", 'json/06207TOS.json', false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var jstat = rawFile.responseText;
+                //alert(jstat);
             }
-          },
-          "Retning": {
-            "label": "retning",
-            "category": {
-              "index": {
-                "10": 0,
-                "20": 1
-              },
-              "label": {
-                "10": "Til",
-                "20": "Fra"
-              }
-            }
-          },
-          "ContentsCode": {
-            "label": "statistikkvariabel",
-            "category": {
-              "index": {
-                "Passasjerer": 0
-              },
-              "label": {
-                "Passasjerer": "Passasjerer"
-              },
-              "unit": {
-                "Passasjerer": {
-                  "base": "personer",
-                  "decimals": 0
-                }
-              }
-            }
-          },
-          "Tid": {
-            "label": "måned",
-            "category": {
-              "index": {
-                "2017M01": 0,
-                "2017M02": 1,
-                "2017M03": 2,
-                "2017M04": 3,
-                "2017M05": 4,
-                "2017M06": 5
-              },
-              "label": {
-                "2017M01": "2017M01",
-                "2017M02": "2017M02",
-                "2017M03": "2017M03",
-                "2017M04": "2017M04",
-                "2017M05": "2017M05",
-                "2017M06": "2017M06"
-              }
-            }
-          },
-          "id": [
-            "Havner",
-            "Retning",
-            "ContentsCode",
-            "Tid"
-          ],
-          "size": [
-            1,
-            2,
-            1,
-            6
-          ],
-          "role": {
-            "metric": [
-              "ContentsCode"
-            ],
-            "time": [
-              "Tid"
-            ]
-          }
-        },
-        "label": "Havnestatistikk. Hurtigruten Bergen - Kirkenes. Passasjerer, etter havn, retning, statistikkvariabel og måned",
-        "source": "Statistisk sentralbyrå",
-        "updated": "2017-09-22T18:34:00Z",
-        "value": [
-          2131,
-          4228,
-          4692,
-          2079,
-          2591,
-          6098,
-          2047,
-          4194,
-          4347,
-          2156,
-          2384,
-          3044
-        ]
-      }
+        }
     }
+    // var jstat = {
+    //   "dataset": {
+    //     "dimension": {
+    //       "Havner": {
+    //         "label": "havn",
+    //         "category": {
+    //           "index": {
+    //             "TOS": 0
+    //           },
+    //           "label": {
+    //             "TOS": "Tromsø"
+    //           }
+    //         }
+    //       },
+    //       "Retning": {
+    //         "label": "retning",
+    //         "category": {
+    //           "index": {
+    //             "10": 0,
+    //             "20": 1
+    //           },
+    //           "label": {
+    //             "10": "Til",
+    //             "20": "Fra"
+    //           }
+    //         }
+    //       },
+    //       "ContentsCode": {
+    //         "label": "statistikkvariabel",
+    //         "category": {
+    //           "index": {
+    //             "Passasjerer": 0
+    //           },
+    //           "label": {
+    //             "Passasjerer": "Passasjerer"
+    //           },
+    //           "unit": {
+    //             "Passasjerer": {
+    //               "base": "personer",
+    //               "decimals": 0
+    //             }
+    //           }
+    //         }
+    //       },
+    //       "Tid": {
+    //         "label": "måned",
+    //         "category": {
+    //           "index": {
+    //             "2017M01": 0,
+    //             "2017M02": 1,
+    //             "2017M03": 2,
+    //             "2017M04": 3,
+    //             "2017M05": 4,
+    //             "2017M06": 5
+    //           },
+    //           "label": {
+    //             "2017M01": "2017M01",
+    //             "2017M02": "2017M02",
+    //             "2017M03": "2017M03",
+    //             "2017M04": "2017M04",
+    //             "2017M05": "2017M05",
+    //             "2017M06": "2017M06"
+    //           }
+    //         }
+    //       },
+    //       "id": [
+    //         "Havner",
+    //         "Retning",
+    //         "ContentsCode",
+    //         "Tid"
+    //       ],
+    //       "size": [
+    //         1,
+    //         2,
+    //         1,
+    //         6
+    //       ],
+    //       "role": {
+    //         "metric": [
+    //           "ContentsCode"
+    //         ],
+    //         "time": [
+    //           "Tid"
+    //         ]
+    //       }
+    //     },
+    //     "label": "Havnestatistikk. Hurtigruten Bergen - Kirkenes. Passasjerer, etter havn, retning, statistikkvariabel og måned",
+    //     "source": "Statistisk sentralbyrå",
+    //     "updated": "2017-09-22T18:34:00Z",
+    //     "value": [
+    //       2131,
+    //       4228,
+    //       4692,
+    //       2079,
+    //       2591,
+    //       6098,
+    //       2047,
+    //       4194,
+    //       4347,
+    //       2156,
+    //       2384,
+    //       3044
+    //     ]
+    //   }
+    // }
+    // alert(jstat);
 
     var myChart = Highcharts.chart('container1', {
         chart: {
@@ -145,8 +159,9 @@ $(function () {
             JSONstat(jstat).Dataset(0).Data( {'Retning' : '20', 'Tid' : '2017M04'} ).value,
             JSONstat(jstat).Dataset(0).Data( {'Retning' : '20', 'Tid' : '2017M05'} ).value,
             JSONstat(jstat).Dataset(0).Data( {'Retning' : '20', 'Tid' : '2017M06'} ).value]
-            }]
-        });
+        }]
+    });
+    rawFile.send(null);
 });
 
 // Addition to fix other html objects
