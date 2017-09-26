@@ -65,4 +65,5 @@ typings/
 Highcharts/
 
 #json folder
-json/
+json/*
+!json/06207TOS.json

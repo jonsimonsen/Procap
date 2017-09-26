@@ -6,6 +6,7 @@
 
 $(function () {
     var rawFile = new XMLHttpRequest(); // https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file
+    var jstat = null
     rawFile.open("GET", 'json/06207TOS.json', false);
     rawFile.onreadystatechange = function ()
     {
@@ -13,12 +14,13 @@ $(function () {
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                var jstat = rawFile.responseText;
-                //alert(jstat);
+                jstat = JSON.parse(rawFile.responseText);
             }
         }
     }
-    // var jstat = {
+    rawFile.send(null);
+
+    // var kstat = {
     //   "dataset": {
     //     "dimension": {
     //       "Havner": {
@@ -123,7 +125,7 @@ $(function () {
     //     ]
     //   }
     // }
-    // alert(jstat);
+    // console.log(kstat);
 
     var myChart = Highcharts.chart('container1', {
         chart: {
@@ -161,7 +163,6 @@ $(function () {
             JSONstat(jstat).Dataset(0).Data( {'Retning' : '20', 'Tid' : '2017M06'} ).value]
         }]
     });
-    rawFile.send(null);
 });
 
 // Addition to fix other html objects

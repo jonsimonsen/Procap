@@ -1,0 +1,105 @@
+{
+  "dataset": {
+    "dimension": {
+      "Havner": {
+        "label": "havn",
+        "category": {
+          "index": {
+            "TOS": 0
+          },
+          "label": {
+            "TOS": "Tromsø"
+          }
+        }
+      },
+      "Retning": {
+        "label": "retning",
+        "category": {
+          "index": {
+            "10": 0,
+            "20": 1
+          },
+          "label": {
+            "10": "Til",
+            "20": "Fra"
+          }
+        }
+      },
+      "ContentsCode": {
+        "label": "statistikkvariabel",
+        "category": {
+          "index": {
+            "Passasjerer": 0
+          },
+          "label": {
+            "Passasjerer": "Passasjerer"
+          },
+          "unit": {
+            "Passasjerer": {
+              "base": "personer",
+              "decimals": 0
+            }
+          }
+        }
+      },
+      "Tid": {
+        "label": "måned",
+        "category": {
+          "index": {
+            "2017M01": 0,
+            "2017M02": 1,
+            "2017M03": 2,
+            "2017M04": 3,
+            "2017M05": 4,
+            "2017M06": 5
+          },
+          "label": {
+            "2017M01": "2017M01",
+            "2017M02": "2017M02",
+            "2017M03": "2017M03",
+            "2017M04": "2017M04",
+            "2017M05": "2017M05",
+            "2017M06": "2017M06"
+          }
+        }
+      },
+      "id": [
+        "Havner",
+        "Retning",
+        "ContentsCode",
+        "Tid"
+      ],
+      "size": [
+        1,
+        2,
+        1,
+        6
+      ],
+      "role": {
+        "metric": [
+          "ContentsCode"
+        ],
+        "time": [
+          "Tid"
+        ]
+      }
+    },
+    "label": "Havnestatistikk. Hurtigruten Bergen - Kirkenes. Passasjerer, etter havn, retning, statistikkvariabel og måned",
+    "source": "Statistisk sentralbyrå",
+    "updated": "2017-09-22T18:34:00Z",
+    "value": [
+      2131,
+      4228,
+      4692,
+      2079,
+      2591,
+      6098,
+      2047,
+      4194,
+      4347,
+      2156,
+      2384,
+      3044
+    ]
+  }
+}

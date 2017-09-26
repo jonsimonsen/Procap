@@ -1,7 +1,7 @@
 # Procap
 Project for visualization of statistical data
 
-The project is not constructed with the public in mind, so the README is not necessarily particularly descriptive.  
+The project is not constructed with the public in mind (until after version 0.6 anyway), so the README is not necessarily particularly descriptive.  
 It might not make perfect sense for casual readers.  
 
 After forking, the results can be seen by opening the html file in a browser.  
@@ -61,6 +61,9 @@ Friday
 -The chart is static and all data included in the js file.  
 -Commiting version 0.6
 
+Logging after the initial week will not be done since the secondary part seem to have lost interest in the project.  
+Starting from version 0.7, new stuff will be described in the version notes.  
+
 versions
 --------
 
@@ -111,3 +114,11 @@ versions
 -TODO: Make it possible to read the data from file and/or directly from the web api.  
 TODO2: Fix a bug that makes the new chart be only half of the desired height.  
 TODO3: Apply DRY to the selector.  
+
+0.7
+---
+
+-Data is now read from a file. Fixed gitignore to make the file available.  
+-TODO: Read data from a website/the API.  
+-same TODO2 and TODO3 as before. Should try to make minor version that fixes the concerns.  
+TODO4: Try to find out the source of an XML-parsing error. This might incidentally be resolved when the first TODO is resolved.  
